@@ -197,6 +197,9 @@ header .caption .caption-container {
         margin-top: 10px;
         margin-bottom: 10px;
     }
+    header .caption {
+        padding: 20px;
+    }
 }
 @media (max-width: 962px) {
     header .caption .caption-container h2 {
@@ -593,3 +596,65 @@ transform: translateX(-50%);
 }
 
 /* End about */
+
+/* Start statistics */
+.statistics {
+    background-image: url(../imgs/statistics.jpg);
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.statistics::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.statistics-container {
+    width: 80%;
+    height: fit-content;
+    padding: 40px;
+    background-color: var(--main-transparent-color);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
+.statistics-container .stat-element {
+    flex-grow: 1;
+    position: relative;
+}
+.statistics-container .stat-element i {
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    padding: 7px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.statistics-container .stat-element .number{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+}
+.statistics-container .stat-element p{
+    text-transform: capitalize;
+    text-align: center;
+}
+
+/* End statistics */
