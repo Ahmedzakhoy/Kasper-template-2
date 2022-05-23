@@ -8,7 +8,9 @@
     --main-color : #19c8fa ;
     --main-transparent-color : rgb(25 200 250 / 0.6) ;
     --secondary-color : #353235 ;
-    --secondary-lighter-color: #c7c3c5 ;
+    --secondary-lighter-color: #a6a5a5 ;
+    --main-margin: 50px ;
+
 }
 body {
     font-family: 'Open Sans', sans-serif;
@@ -58,7 +60,7 @@ border-color: white;
 }
 
 header .container {
-    width: 60%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     border-bottom: 2px solid var(--secondary-lighter-color);
@@ -221,3 +223,96 @@ header .caption .caption-container {
     }
 }
 /* End header  */
+/* Start component */
+.section-head {
+    margin: var(--main-margin) auto;
+    background-color: white;
+
+
+}
+.section-head h2 {
+    font-size: 30px;
+    color: var(--secondary-color);
+    text-align: center;
+    text-transform: uppercase;
+
+}
+.circle {
+    width: 25px;
+    height: 25px;
+    border: 3px solid var(--secondary-color);
+    border-radius: 50%;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.circle::before, .circle::after {
+    content: "";
+    width: 75px;
+    height: 3px;
+    background-color: var(--secondary-color);
+}
+.circle::before{
+    position: absolute;
+    left: -77px;
+    top: 8px;
+}
+.circle::after {
+    position: absolute;
+    right: -77px;
+    top: 8px;
+}
+.section-head p {
+    color: var(--secondary-lighter-color);
+    text-align: center;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* End component */
+
+/* Start services */
+.services .services-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 60px;
+    column-gap: 20px;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: var(--main-margin);
+    padding-top: var(--main-margin);
+
+}
+.services .services-container .services-element {
+    width: 400px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+}
+.services .services-container .services-element .icon {
+    font-size: 50px;
+    margin: 20px;
+    text-align: center;
+}
+.services .services-container .services-element h2 {
+    color: var(--main-color);
+    margin: 20px 0;
+}
+@media (max-width: 767px) {
+    .services .services-container .services-element {
+        flex-direction: column;
+    }
+    .services .services-container .services-element h2 {
+        text-align: center;
+    }
+    .services .services-head p {
+        width: 70%;
+    }
+}
+/* End services */
