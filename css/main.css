@@ -565,3 +565,31 @@ align-items: center;
 }
 /* End video  */
 
+/* Start about */
+.about .img {
+    height: 300px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.about .img img {
+position: absolute;
+bottom: -100px;
+width: 700px;
+max-width: 100%;
+margin: var(--main-margin);
+left: 50%;
+transform: translateX(-50%);
+}
+@media (max-width: 530px) {
+    .about .img img {
+        left: 25%;
+    }
+    .about .img {
+        height: 200px;
+
+    }
+    
+}
+
+/* End about */
