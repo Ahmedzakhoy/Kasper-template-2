@@ -271,6 +271,11 @@ header .caption .caption-container {
     margin-left: auto;
     margin-right: auto;
 }
+@media (max-width: 767px) {
+     .section-head p {
+        width: 70%;
+    }
+}
 /* End component */
 
 /* Start services */
@@ -310,9 +315,6 @@ header .caption .caption-container {
     }
     .services .services-container .services-element h2 {
         text-align: center;
-    }
-    .services .services-head p {
-        width: 70%;
     }
 }
 /* End services */
@@ -395,3 +397,97 @@ header .caption .caption-container {
     }    
 }
 /* End design  */
+
+
+/* Start portfolio */
+.portfolio-container {
+    
+}
+.portfolio-container-head{
+
+}
+.portfolio-container-head ul {
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+.portfolio-container-head li{
+    width: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.portfolio-container-head li:first-child {
+    background-color: var(--main-color);
+    color: white;
+}
+.portfolio-container .portfolio-imgs{
+    display: flex;
+    flex-direction: row;
+    row-gap: 10px;
+    column-gap: 0;
+    flex-wrap: wrap;
+}
+.portfolio-container .portfolio-imgs .img{
+    width: 300px;
+    height: 300px;
+    flex-grow: 1;
+    overflow: hidden;
+    position: relative;
+    transition-duration: 0.5s;
+}
+.portfolio-container .portfolio-imgs .img .img-info {
+    position: absolute;
+    height: 30%;
+    width: 100%;
+    bottom: -30%;
+    left: 0;
+    background-color: white;
+    padding-left: 10px;
+    transition: 0.5s;
+}
+.portfolio-container .portfolio-imgs .img .img-info h2 {
+    color: black;
+    text-transform: capitalize;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.portfolio-container .portfolio-imgs .img .img-info p {
+    color: var(--main-color);
+    text-transform: capitalize;
+}
+.portfolio-container .portfolio-imgs .img:hover .img-info {
+    bottom: 0;
+}
+.portfolio-container .portfolio-imgs img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.portfolio-container .portfolio-imgs .img:hover img{
+    transform: rotate(5deg) scale(120%);
+}
+.portfolio-container-foot {
+margin-top: var(--main-margin);
+margin-bottom: var(--main-margin);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.portfolio-container-foot button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    background-color: var(--main-color);
+    border: none;
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+}
+/* End portfolio */
