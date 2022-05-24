@@ -841,3 +841,51 @@ left: 58%;
 left: 48%;
 }
 /* End skills */
+
+/* Start quote */
+.quote {
+    margin-top: var(--main-margin);
+    background-image: url(../imgs/quote.jpg);
+    position: relative;
+    height: 400px;
+    background-size: cover;
+
+}
+.quote::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 70%);
+}
+.quote q {
+    color: white;
+    position: relative;
+    top: 50%;
+    font-size: 30px;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: capitalize;
+}
+.quote p {
+    color: white;
+    position: relative;
+    margin: 20px auto ;
+    top: 50%;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+@media (max-width: 870px) {
+    .quote q {
+        font-size: 20px;
+    }
+    .quote p {
+        margin-top: 10px;
+    }    
+}
+/* End quote */
