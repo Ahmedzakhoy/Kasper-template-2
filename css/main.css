@@ -658,3 +658,186 @@ transform: translateX(-50%);
 }
 
 /* End statistics */
+
+
+/* Start skills */
+
+.skills-section {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+}
+.testimonials, .skills {
+    width: 400px;
+    max-width: 100%;
+    flex-grow: 1;
+}
+.testimonials {
+    position: relative;
+}
+.testimonials-head, .skills-head {
+    margin-bottom: var(--main-margin);
+}
+.testimonials-head h2, .skills-head h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: calc(var(--main-margin) - 20px);
+    margin-top: calc(var(--main-margin) - 20px);
+    color: black;
+    text-align: center;
+}
+.testimonials-head p, .skills-head p {
+    color: var(--secondary-lighter-color);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.testimonials .testimonials-element {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: var(--main-margin);
+    justify-content: center;
+}
+.testimonials .testimonials-element img {
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+    margin: 5px 20px 5px 5px;
+}
+
+.testimonials .testimonials-element .test-internal {
+    width: 60%;
+}
+@media (max-width: 650px) {
+    .testimonials .testimonials-element .test-internal {
+        width: 80%;
+    }    
+    
+}
+.testimonials .testimonials-element p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.testimonials .testimonials-element h3 {
+    color: var(--secondary-lighter-color);
+    text-align: right;
+    text-transform: capitalize;
+    margin-bottom: calc(var(--main-margin) - 30px);
+
+}
+.testimonials .testimonials-element hr {
+    height: 1px;
+    background-color: var(--secondary-lighter-color);
+}
+.testimonials .testimonials-circles {
+    display: flex;
+    justify-content: center;
+    margin-top: calc(var(--main-margin) - 25px);
+    margin-bottom: calc(var(--main-margin) - 25px);
+}
+.testimonials .testimonials-circles span {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid var(--secondary-lighter-color);
+    margin: 0 5px 0;
+
+}
+.testimonials .testimonials-circles span:nth-child(2) {
+    border: none;
+    background-color: var(--main-color);
+} 
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+
+}
+.skills .skills-element {
+    margin-bottom: var(--main-margin);
+    position: relative;
+}
+.skills .skills-element .skill {
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+.skills .skills-element .progress-bar-1 {
+    background-image: linear-gradient(to right, var(--main-color) 75%, var(--secondary-lighter-color) 75%);
+}    
+.skills .skills-element .progress-bar-2 {
+    background-image: linear-gradient(to right, var(--main-color) 85%, var(--secondary-lighter-color) 85%);
+}    
+.skills .skills-element .progress-bar-3 {
+    background-image: linear-gradient(to right, var(--main-color) 60%, var(--secondary-lighter-color) 60%);
+}    
+.skills .skills-element .progress-bar-4 {
+    background-image: linear-gradient(to right, var(--main-color) 50%, var(--secondary-lighter-color) 50%);
+}    
+
+.skills .skills-element .progress-bar {    
+    height: 30px;
+    width: 90%;
+    position: absolute;
+    top: 50px;
+}
+
+.skills .skills-element .progress-bar::before {    
+content: attr(percentage);
+width: 35px;
+height: 30px;
+position: absolute;
+background-color: black;
+border-radius: 2px;
+color: white;
+font-weight: bold;
+display: flex;
+align-items: center;
+justify-content: center;
+top: -40px;
+}
+.skills .skills-element .progress-bar-1::before {
+left: 70%;
+}    
+.skills .skills-element .progress-bar-2::before {
+left: 80%;
+}    
+.skills .skills-element .progress-bar-3::before {
+left: 55%;
+}    
+.skills .skills-element .progress-bar-4::before {
+left: 45%;
+}    
+
+.skills .skills-element .progress-bar::after {    
+content: "";
+width: 5px;
+height: 5px;
+border: 7px solid;
+border-color: black transparent transparent transparent;
+position: relative;
+top: -2px;
+
+}
+
+.skills .skills-element .progress-bar-1::after {
+    left: 73%;
+}
+.skills .skills-element .progress-bar-2::after {
+left: 83%;
+}    
+.skills .skills-element .progress-bar-3::after {
+left: 58%;
+}    
+.skills .skills-element .progress-bar-4::after {
+left: 48%;
+}
+/* End skills */
