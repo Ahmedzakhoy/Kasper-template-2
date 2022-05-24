@@ -87,11 +87,18 @@ header .container ul li {
     padding-left: 10px;
     padding-right: 10px;
     text-transform: uppercase;
-    transition-duration: 0.2s;
 }
-header .container ul li:hover {
+header .container ul li a:hover {
     color: var(--main-color);
     cursor: pointer;
+}
+header .container ul li a {
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+header .container ul li .active {
+    color: var(--main-color);
 }
 header .container span {
     vertical-align: middle;
@@ -186,6 +193,12 @@ header .caption .caption-container {
     }
     header .container .search-button {
         height: auto;
+    }
+    header .container ul li .active {
+        color: black;
+    }
+    header .container ul li a:hover {
+        color: black;
     }
 }
 @media (max-width: 458px) {
