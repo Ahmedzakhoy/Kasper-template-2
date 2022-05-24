@@ -889,3 +889,113 @@ left: 48%;
     }    
 }
 /* End quote */
+
+/* Start pricing */
+.pricing-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    row-gap: 50px;
+    margin-bottom: var(--main-margin);
+
+}
+.pricing-container .pricing-element {
+    width: 300px;
+    background-color: rgb(252 252 252);
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.pricing-container .pricing-element .pricing-element-head {
+    height: 150px;
+    border-top: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+    width: 100%;
+}
+.pricing-container .pricing-element .pricing-element-head .price-type {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+}
+.pricing-container .pricing-element .pricing-element-head .price {
+    font-size: 70px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.pricing-container .pricing-element .pricing-element-head .price::before {
+    content: "$";
+    font-size: 30px;
+    position: relative;
+    top: -30px;
+    left: 15px;
+}
+.pricing-container .pricing-element .pricing-element-head .price::after {
+    content: "/Mo";
+    font-size: 30px;
+    bottom: 0px;
+    right: 15px;
+    position: relative;
+}
+.pricing-container .pricing-element .pricing-element-body {
+    width: 100%;
+    padding-bottom: var(--main-margin);
+}
+.pricing-container .pricing-element .pricing-element-body .feat {
+    text-align: center;
+    text-transform: capitalize;
+    padding: 20px;
+    border-bottom: 1px solid var(--main-color);
+}
+
+.pricing-container .pricing-element button {
+    width: 120px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+
+}
+.pricing-container .pricing-element .pricing-element-foot {
+    margin-left: auto;
+    margin-right: auto;
+}
+.pricing-foot {
+    
+}
+.pricing-foot p{
+    text-align: center;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.pricing-foot button{
+    display: block;
+    margin: 0 auto var(--main-margin);
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background-color: var(--main-color);
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+@media (max-width: 767px) {
+
+    .pricing-container .pricing-element {
+        flex-grow: 1;
+    }}
+/* End pricing */
