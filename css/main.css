@@ -1097,3 +1097,89 @@ left: 48%;
 
 }
 /* End Subscribe */
+
+/* Start Contact */
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: var(--main-margin);
+    margin-top: var(--main-margin);
+
+}
+
+.contact-container form {
+display: flex;
+flex-direction: column;
+width: 750px;
+max-width: 100%;
+row-gap: 50px;
+position: relative;
+margin-bottom: 150px;
+}
+.contact-container form input:focus, .contact-container form textarea:focus {
+outline: none;
+}
+.contact-container form input[type="text"], .contact-container form input[type="email"] {
+    width: 100%;
+}
+.contact-container form input[type="text"], .contact-container form input[type="email"], .contact-container form input[type="submit"] {
+    height: 50px;
+    padding: 20px;
+    border: 1px solid var(--secondary-lighter-color);
+}
+.contact-container form input[type="email"] {
+
+}
+.contact-container form textarea {
+height: 300px;
+padding: 20px;
+border: 1px solid var(--secondary-lighter-color);
+width: 100%;
+}
+.contact-container form input[type="submit"] {
+    width: 150px;
+    color: white;
+    background-color: var(--main-color);
+    border: none;
+    display: block;
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+    cursor: pointer;
+}
+.contact-container .contact-info {
+align-self: flex-start;
+margin-left: 20px;
+}
+.contact-container .contact-info h2 {
+    text-transform: uppercase;
+    margin: 20px 0;
+    font-weight: normal;
+}
+.contact-container .contact-info p {
+    line-height: 2;
+}
+@media (max-width: 1195px) {
+    .contact-container .contact-info {
+        margin-left: 50%;
+        transform: translateX(-50%);
+
+    }
+    
+}
+@media (max-width: 449px) {
+    .contact-container .contact-info {
+        margin-left: auto;
+        margin-right: auto;
+        transform: translateY(0);
+
+    }
+    
+}
+/* End Contact */
